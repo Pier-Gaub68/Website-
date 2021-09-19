@@ -1,0 +1,542 @@
+/**IMPORTA LA FUENTE DE GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.destino img{
+  max-width: 80%;
+
+}
+.logo {
+  padding-left: 10px;
+  height: 75px;
+  cursor: pointer;
+}
+
+#Tupasy{
+  filter: brightness(0.9);
+}
+
+.contenedor{
+  width: 99%;
+  margin: auto;
+}
+/*----------------------Estilos del header-------------------------*/
+.header .contenedor {
+  display: flex;
+  justify-content: space-between;
+}
+
+#btn-menu,
+.logo {
+  margin: 5px;
+  color: #177410;
+
+}
+
+#btn-menu {
+  display: block;
+  height: 40px;
+  width: 40px;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+  line-height: 45px;
+}
+
+.nav {
+  position: absolute;
+  top: 80px;
+  left: -100%;
+  width: 100%;
+  z-index: 100;
+  transition: all 500ms ease;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-link {
+  background-color: rgba(256, 256, 256, 0.8);
+  cursor: pointer;
+  display: block;
+  padding: 15px;
+  color: #1f9117;
+  height: 60px;
+  border-bottom: 1px solid #1f9117;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.menu-link:hover {
+  color: white;
+  background-color: #379c2f;
+}
+
+.muestrate {
+  left: 0;
+}
+
+/*----------------------Estilos del banner-------------------------*/
+
+.banner img {
+  width: 100%;
+  filter: brightness(0.8);
+}
+
+.banner {
+  position: relative;
+  text-align: center;
+}
+
+#btn-next,
+#btn-prev {
+  font-size: 30px;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(98, 231, 164, 0.4);
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  line-height: 40px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50%;
+  font-family: "Poppins";
+  cursor: pointer;
+  color: white;
+  display: none;
+}
+
+#btn-prev {
+  left: 10px;
+}
+
+#btn-next {
+  right: 10px;
+}
+
+#btn-next:hover,
+#btn-prev:hover {
+  background-color: rgba(98, 231, 164, 0.9);
+}
+.banner-description {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%) translateY(-50%);
+}
+
+.banner-description h1 {
+  font-size: 26px;
+}
+
+.banner-description p {
+  font-size: 13px;
+  display: none;
+}
+
+.slider-txt2 {
+  background-color: rgba(98, 231, 164, 0.7);
+  width: 100%;
+  position: absolute;
+  bottom: 6px;
+  padding: 7px;
+  color: white;
+  text-align: justify;
+  display: none;
+}
+
+/*----------------------Estilos de Destino-------------------------*/
+
+.destino-titulo{
+  font-size: 40px;
+  text-align: center;
+  
+}
+
+.destino-txt{
+  text-align: justify;
+  font-size: 20px;
+  padding: 15px;
+}
+
+.destino-img{
+  width: 100%;
+  border-radius: 4%;
+  margin: 24px;
+
+}
+
+.destino-columna {
+  display: flex;
+  justify-content: center;
+  position: relative;
+ 
+}
+
+.destino-columna h3 {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+  font-size: 32px;
+  font-weight: bold ;
+}
+
+.destino .contenedor{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.destino-columna:hover .destino-img{
+  box-shadow: 0 0 0 8px #e1e1e1,
+              0 15px 200px;
+  transform: scale(1.1);
+}
+
+/*----------------------Estilos de Actividades-------------------------*/
+
+.especial{
+  background-color:  #62cc5a;
+  text-align: center;
+  color: white;
+
+}
+
+.programas-titulo{
+  font-size: 30px;
+  padding: 20px 20px 10px 20px;
+}
+
+.especial-img{
+  width: 100%;
+}
+
+.informacion{
+  background: white;
+  color: black;
+  margin-top: -7px;
+}
+
+.especial-titulo{
+  font-size: 25px;
+  padding: 5px;
+}
+
+.especial-txt{
+  padding: 25px;
+  text-align: justify;
+
+}
+
+.button{
+  padding: 15px;
+  margin: 15px;
+  font-size: 20px;
+  background-color: rgb(54, 167, 54);
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+
+}
+
+.button:hover{
+  box-shadow: 0 0px 15px 3px rgba(98, 231, 164, 0.9) ;
+}
+
+.especial-columna1, .especial-columna2, .especial-columna3{
+  margin: 15px;
+}
+
+.especial .contenedor{
+  display: flex;
+  flex-wrap: wrap ;
+  justify-content: center;
+}
+/*----------------------Estilos de Otras Ciudades de Interés-------------------------*/
+
+.otras-titulo{
+  padding: 25px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.otras-img{
+  width: 100%;
+  filter: brightness(60%);
+}
+
+.otras-columna{
+  position: relative;
+}
+
+.otras-columna h4{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+  font-size: 30px ;
+}
+
+.otras-columna:hover .otras-img{
+  filter: brightness(100%);
+}
+
+.otras .contenedor{
+  display: flex;
+  flex-wrap: wrap ;
+  justify-content: center;
+}
+
+/*----------------------Estilos del Fondo-------------------------*/
+.fondo-img{
+  width: 100%;
+}
+
+.info-fondo{
+position: relative;
+}
+
+.fondo-titulo{
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 22px;
+  text-align: center;
+}
+
+.fondo-txt{
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 17px;
+  text-align: center;
+
+}
+
+/*----------------------Estilos del Footer-------------------------*/
+footer .contenedor{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.copy{
+  font-size: 20px;
+}
+
+.sociales{
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+}
+
+/*----------------------Estilos del Responsive-------------------------*/
+
+@media(min-width:480px){
+  .banner-description{
+    top: 32%;
+    width: 80%;
+    padding: 8px;
+  }
+  .banner-description p{
+    display: block;
+    font-size: 17px;
+  }
+  .slider-txt2{
+    display: block;
+    bottom: 7px;
+    font-size: 17px;
+    
+  }
+  .destino-img{
+    width: 400px;
+  }
+
+  .destino{
+    padding: 10px;
+  }
+
+  .especial-columna1, .especial-columna2, .especial-columna3{
+    width: 90%;
+  }
+
+  .otras-columna h1{
+    font-size: 40px;
+  }
+
+  .fondo-titulo{
+    font-size: 40px;
+  }
+  
+  .fondo-txt{
+    font-size: 22px;
+  }
+}
+
+@media(min-width:680px){
+  .especial-columna1,.especial-columna2{
+    width: 43%;
+  }
+
+
+  .especial-columna3{
+    width: 49%;
+    margin-left: 3px;
+  }
+}
+
+@media(min-width:768px){
+  #btn-prev, #btn-next{
+    display: block;
+  }
+
+  .banner-description{
+    top: 50%;
+  }
+
+  .banner-description h1{
+    font-size: 42px;
+  }
+
+  .banner-description p{
+    font-size: 18px;
+  }
+
+  .slider-txt2{
+    font-size: 20px;
+    padding: 13px;
+  }
+
+  .destino-columna{
+    width: 45%;
+  }
+
+  .fondo-titulo{
+    font-size: 60px;
+  }
+
+  .fondo-txt{
+   font-size: 35px; 
+  }
+
+  .sociales{
+    width: auto;
+    padding: 20px;
+  }
+
+  footer .contenedor{
+    justify-content: space-between;
+  }
+
+  .copy{
+    padding: 30px;
+  }
+
+}
+@media(min-width:1024px){
+  .contenedor{
+    width: 1000px;
+  }
+
+  .nav{
+    position: static;
+    width: auto;
+  }
+
+  .menu{
+    display: flex;
+  }
+
+  #btn-menu{
+    display: none;
+  }
+
+  .menu-link{
+    border: none;
+  }
+
+  .banner-description, .contenedor{
+    width: 90%;
+  }
+
+  #btn-prev, #btn-next{
+    width: 60px;
+    height: 60px;
+    transform: translateY(-50%);
+    line-height: 50px ;
+    font-size: 60px ;
+  }
+
+   .banner-description h1{
+    font-size: 60px;
+  }
+
+  .banner-description p{
+    font-size: 28px;
+  }
+
+  .slider-txt2{
+    font-size: 32px;
+    padding: 20px;
+  }
+
+  .destino-columna{
+    width: 25% ;
+  }
+ 
+   .especial-columna1, .especial-columna2, .especial-columna3{
+     width: 30%;
+   }
+
+   .otras-columna{
+     width: 32%;
+     margin: 0px 2px;
+   }
+
+   
+
+   .fondo-img{
+     padding: 0px 20px 0px 20px;
+   }
+
+   .fondo-titulo{
+     font-size: 80px ;
+   }
+
+   .fondo-txt{
+     font-size: 42px;
+   }
+}
+
+@media(min-width:1280px){
+  .contenedor{
+    width: 1200px;
+  }
+
+  .banner-description{
+    padding: 50px;
+    width: 1200px;
+  }
+} 
